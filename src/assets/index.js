@@ -13,6 +13,12 @@ import apartmentImg from './apartment.jpg'
 import resortImg from './resort.jpg'
 import villaImg from './villa.jpg'
 import inspiration from './inspiration1.jpg'
+import hotel1 from './hotel1.jpg'
+import hotel2 from './hotel2.jpg'
+import hotel3 from './hotel3.jpg'
+import hotel4 from './hotel4.jpg'
+import hotel5 from './hotel5.jpg'
+import globe from './globe.png'
 
 const promotions = [
   promotion1,
@@ -22,5 +28,13 @@ const promotions = [
   promotion5,
 ]
 
+const hotelImgs = [
+  hotel1,
+  hotel2,
+  hotel3,
+  hotel4,
+  hotel5,
+]
 
-export { countryIcon, banner, flag, promotions, offerImg, airplaneImg, hotelImg, apartmentImg, resortImg, villaImg, inspiration }
+
+export { countryIcon, banner, flag, promotions, offerImg, airplaneImg, hotelImg, apartmentImg, resortImg, villaImg, inspiration, hotelImgs, globe }

@@ -86,7 +86,7 @@ const Searchbox = () => {
       <form className='flex flex-col lg:flex-row p-2 mx-auto bg-white rounded-md border-2 border-primary gap-4 items-center lg:gap-0'>
         {/* Destination input */}
         <label htmlFor='destinationInput' className='flex items-center gap-1 w-max lg:w-1/4'>
-          <BedIcon className='text-primary' />
+          <BedIcon />
           <input type="text" name="destination" id="destinationInput" placeholder='Where are you going?' className='grow focus:outline-none' />
         </label>
         {/* Dates input */}

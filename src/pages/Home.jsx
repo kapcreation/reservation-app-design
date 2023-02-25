@@ -6,6 +6,8 @@ import Offers from '../components/Offers'
 import BrowseProperty from '../components/BrowseProperty'
 import Gallery from '../components/Gallery'
 import BrowseHotel from '../components/BrowseHotel'
+import DiscountBanner from '../components/DiscountBanner'
+import Footer from '../components/Footer'
 
 const Home = () => {
   return (
@@ -17,6 +19,8 @@ const Home = () => {
       <BrowseProperty />
       <Gallery />
       <BrowseHotel />
+      <DiscountBanner />
+      <Footer />
     </div>
   )
 }
