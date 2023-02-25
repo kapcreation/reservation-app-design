@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="max-w-md mx-auto py-12 text-center">
           <h1 className='font-bold text-2xl text-white'>Save time, save money!</h1>
           <p className='text-slate-300 mb-4'>Sign up and we'll send the best deals to you</p>
-          <form className='flex justify-center'>
+          <form onSubmit={(e)=>e.preventDefault()} className='flex justify-center'>
             <input type="email" name="email" id="emailInput" placeholder='Your email address' className='p-2 rounded-md mr-1 w-[190px] lg:w-[280px] focus:outline-none focus:ring' />
             <button className='py-2 px-4 rounded-md bg-primary text-white border-2 border-white font-semibold'>Subscribe</button>
           </form>

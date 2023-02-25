@@ -1,5 +1,4 @@
 import React from 'react'
-import { useDarkMode } from '../contexts/DarkModeContext'
 import { countryIcon } from '../assets'
 import MenuIcon from '@mui/icons-material/Menu';
 import BedIcon from '@mui/icons-material/Bed';
@@ -7,9 +6,10 @@ import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
 import PublicIcon from '@mui/icons-material/Public';
 import DirectionsCarIcon from '@mui/icons-material/DirectionsCar';
 import AttractionsIcon from '@mui/icons-material/Attractions';
+import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
+
 
 const Navbar = () => {
-  const { DarkModeToggle } = useDarkMode()
 
   return (
     <header id="header" className="bg-blue-800 w-full flex justify-center items-center pb-5">
@@ -26,7 +26,9 @@ const Navbar = () => {
             {/* Help */}
             <div className='hidden md:flex border border-white rounded-full w-6 h-6 items-center justify-center text-white cursor-pointer'>?</div>
             {/* Darkmode toggle */}
-            <DarkModeToggle />
+            <button className='hidden md:flex w-6 h-6 items-center justify-center text-white'>
+              <DarkModeOutlinedIcon />
+            </button>
             {/* Auth Button */}
             <button type='button' className='hidden md:flex bg-white text-primary px-4 py-2 rounded-md font-semibold'>Sign in</button>
             {/* Mobile menu button */}
@@ -38,22 +40,22 @@ const Navbar = () => {
         <div className="flex items-center px-4">
           {/* Nav menu */}
           <nav id="nav-menu" className="w-full flex gap-2 overflow-x-auto">
-            <a href="#home" className="flex items-center gap-1 nav-menu__link text-base text-slate-900 dark:text-white group-hover:text-primary border-b-2 border-white px-4 py-1 whitespace-nowrap">
+            <a href="#home" className="flex items-center gap-1 nav-menu__link text-white border-b-2 border-white px-4 py-1 whitespace-nowrap">
               <BedIcon /> Stays
             </a>
-            <a href="#home" className="flex items-center gap-1 nav-menu__link text-base text-slate-900 dark:text-white group-hover:text-primary px-4 py-2 whitespace-nowrap">
+            <a href="#home" className="flex items-center gap-1 nav-menu__link text-white px-4 py-2 whitespace-nowrap">
               <FlightTakeoffIcon /> Flights
             </a>
-            <a href="#home" className="flex items-center gap-1 nav-menu__link text-base text-slate-900 dark:text-white group-hover:text-primary px-4 py-2 whitespace-nowrap">
+            <a href="#home" className="flex items-center gap-1 nav-menu__link text-white px-4 py-2 whitespace-nowrap">
               <PublicIcon /> Flight + Hotel
             </a>
-            <a href="#home" className="flex items-center gap-1 nav-menu__link text-base text-slate-900 dark:text-white group-hover:text-primary px-4 py-2 whitespace-nowrap">
+            <a href="#home" className="flex items-center gap-1 nav-menu__link text-white px-4 py-2 whitespace-nowrap">
               <DirectionsCarIcon /> Car Rentals
             </a>
-            <a href="#home" className="flex items-center gap-1 nav-menu__link text-base text-slate-900 dark:text-white group-hover:text-primary px-4 py-2 whitespace-nowrap">
+            <a href="#home" className="flex items-center gap-1 nav-menu__link text-white px-4 py-2 whitespace-nowrap">
               <AttractionsIcon /> Attractions
             </a>       
-            <a href="#home" className="flex items-center gap-1 nav-menu__link text-base text-slate-900 dark:text-white group-hover:text-primary px-4 py-2 whitespace-nowrap">
+            <a href="#home" className="flex items-center gap-1 nav-menu__link text-white px-4 py-2 whitespace-nowrap">
               <DirectionsCarIcon /> Airport taxis
             </a>       
           </nav>
